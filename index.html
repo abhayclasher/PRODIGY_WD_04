@@ -1,191 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Personal Portfolio Website</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="https://kit.fontawesome.com/2b05088d83.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Site</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
 </head>
 
 <body>
-  <div id="header">
     <div class="container">
-      <nav>
-        <img src="" class="logo">
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#languages">Languages</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <i class="fas fa-times" onclick="closemenu()"></i>
-        </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text">
-        <p>Full Stack Web Developer</p>
-        <h1>Hi, I'm <span>Abhay</span><br />From Kolkata</h1>
-      </div>
+        <header class="flex">
+            <div class="logo">Abhay Kumar<span>.</span></div>
+            <nav>
+                <ul class="flex">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Service</a></li>
+                    <li><a href="#project">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+                <div id="search" class="flex">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="" id="" placeholder="Search..." />
+                </div>
+            </nav>
+        </header>
+
+        <div class="main flex">
+            <div class="main-one">
+                <h1>Hy! I am</h1>
+                <span class="auto">Coder</span>
+                <p>
+                    Hi, I'm Abhay Kumar, a student; I consider myself a person passionate about programming and web development since in 2016 I had the opportunity to get to know this world of the front-end and I was able to create my first web page only using HTML and CSS from there, I felt a great passion for web development, since you can do amazing things knowing how to use HTML, CSS, JavaScript and to this day I still feel that same passion when I create a web page.
+
+                </p>
+                <button>Hire Me</button>
+            </div>
+            <div class="main-two">
+            </div>
+        </div>
+
+        <section class="projects" id="project">
+            <h1>My Awesome <br /><span>Projects</span></h1>
+            <p>
+                I consider myself a self-taught person since I like to be constantly learning day by day, both new technologies and new development methods that help me polish and raise my level of learning.
+            </p>
+            <button class="button">Download CV</button>
+            <div class="projects-div flex div-1">
+                <img src="./Images/Projects/5.png" alt="" />
+                <h3>Ecommerce Website</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, ex!
+                </p>
+                <button>Live Preview</button>
+            </div>
+            <div class="projects-div flex div-2">
+                <img src="./Images/Projects/6.png" alt="" />
+                <h3>Weather App</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, debitis.
+                </p>
+                <button>Live Preview</button>
+            </div>
+            <div class="projects-div flex div-3">
+                <img src="./Images/Projects/7.png" alt="" />
+                <h3>Food App</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, nulla!
+                </p>
+                <button>Live Preview</button>
+            </div>
+        </section>
+        <br /><br />
+
+        <section class="about flex" id="about">
+            <div class="about-one">
+                <h1>About me</h1>
+                <p>
+                    Hi, I'm Abhay Kumar, a student; I consider myself a person passionate about programming and web development since in 2016 I had the opportunity to get to know this world of the front-end and I was able to create my first web page only using HTML and CSS from there, I felt a great passion for web development, since you can do amazing things knowing how to use HTML, CSS, JavaScript and to this day I still feel that same passion when I create a web page.
+                </p>
+                <div class="btns">
+                    <button>Download CV</button>
+                    <button>Contact Me</button>
+                </div>
+            </div>
+            <div class="about-two">
+                <img src="./Images/About/1.png" alt="" />
+            </div>
+        </section>
+        <br /><br /><br />
+
+        <section class="contact" id="contact">
+            <h1>Let Us <span>Talk!</span></h1>
+            <div class="box flex">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name.." />
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email.." />
+                </div>
+                <textarea name="" id="" cols="60" rows="5" placeholder="Enter your Message here...."></textarea>
+                <div>
+                    <input type="submit" class="send" value="Send" />
+                </div>
+            </div>
+        </section>
+        <footer class="flex" id="footer">
+            <div class="copy">Made By <a href="https//www.instagram.com/abhay_clasher">Abhay Kumar</a></div>
+            <div class="social">
+                <a class="ig" href="https//www.instagram.com/abhay_clasher" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="fb" href="https//www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="wa" href="https://wa.me/6294995876" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a class="ph" href="tel:+916294995876" target="_blank">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </footer>
     </div>
-  </div>
-  <!-- -----------------------------About me------------------------- -->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="./Avatar2.png">
-        </div>
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>My name is Abhay Kumar and I am a full stack Web developer.
-            I have been dedicated to web design and development for 5 years, I am constantly learning the technologies that I already master, I am also looking to learn new technologies to enrich my skills and improve my good practices</p>
 
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-          </div>
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>UI/UX</span>
-                <p>Designing Web interfaces</p>
-              </li>
-              <li> </li>
-              <li> </li>
-              <li><span>5 Years Coding Experience</span>
-                <p>5 years coding experience and know 6 coding languages</p>
-              </li>
-              <li> </li>
-              <li> </li>
-              <li><span>Backend Web Development</span>
-                <p>Build backend of websites using Java</p>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="achievements">
-            <ul>
-              <li><span> Certificates </span>
-                <p>Google associate cloud engineer</p>
-              </li>
-              <li><span>Completed programs</span>
-                <p>Google cloud arcade</p>
-              </li>
-              <li><span>Experience</span>
-                <p>Proficient in coding with 5 years of experience; currently learning Java
-                 </p>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>2024</span><br />CST</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ------------------------Languages------------------------------ -->
-  <div id="languages">
-    <div class="container">
-      <h1 class="sub-title">My coding Languages</h1>
-      <div class="languages-list">
-        <div>
-          <i class="fa-brands fa-java"></i>
-          <h2>JAVA</h2>
-          <p>Java is a versatile, object-oriented programming language known for its portability and wide usage in
-            building diverse applications across different platforms.</p>
-          <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-brands fa-python"></i>
-          <h2>Python</h2>
-          <p>Python is a high-level, versatile programming language renowned for its readability and simplicity, favored
-            for its wide range of applications from web development to data analysis.</p>
-          <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-brands fa-html5"></i>
-          <h2>HTML</h2>
-          <p>HTML (Hypertext Markup Language) is a standard language used for creating and structuring the content of
-            web pages by using a system of tags to define elements such as headings, paragraphs, links, and images.</p>
-          <a href="https://en.wikipedia.org/wiki/HTML">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-brands fa-css3-alt"></i>
-          <h2>CSS</h2>
-          <p>CSS (Cascading Style Sheets) is a stylesheet language utilized to control the visual presentation and
-            layout of HTML elements in web pages, enhancing their aesthetics and design.</p>
-          <a href="https://en.wikipedia.org/wiki/CSS">Learn more</a>
-        </div>
-        <div>
-          <i class="fa-brands fa-square-js"></i>
-          <h2>JavaScript</h2>
-          <p>JavaScript is a versatile programming language primarily used for adding interactivity, dynamic behavior,
-            and complex functionality to web pages, making them more engaging and responsive.</p>
-          <a href="https://en.wikipedia.org/wiki/JavaScript">Learn more</a>
-        </div>
-        <div>
-          <i class="c++"><img src="./plus_logo_c_icon_214621.png"></i>
-          <h2>C++</h2>
-          <p>C++ is a powerful, object-oriented programming language widely employed for developing efficient software
-            and systems, offering both high-level abstractions and low-level memory manipulation capabilities.</p>
-          <a href="https://en.wikipedia.org/wiki/C%2B%2B">Learn more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- -----------------------------contact------------------------- -->
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fa-solid fa-paper-plane"></i> Dancerabhay337@gmail.com</p>
-          <p><i class="fa-solid fa-square-phone"></i> 6394995876</p>
-         
-        </div>
-        <div class="contact-right">
-          <form>
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-
-    var tablinks = document.getElementsByClassName('tab-links');
-    var tabcontents = document.getElementsByClassName('tab-contents');
-
-    function opentab(tabname) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
-      }
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu() {
-      sidemenu.style.right = "0";
-    }
-    function closemenu() {
-      sidemenu.style.right = "-200px";
-    }
-  </script>
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto", {
+            strings: ["clasher", "Web Developer", "UI/UX Designer"],
+            typeSpeed: 70,
+            backSpeed: 80,
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>
